@@ -64,10 +64,10 @@ function InputArea() {
         <div className="sticky bottom-0 bg-white p-2">
             <form
                 onSubmit={handleSubmit(onSubmit)}
-                className="flex items-center border rounded"
+                className="flex items-center border rounded-[8px]"
             >
                 <input
-                    className="flex-grow p-2 border-0 text-black"
+                    className="flex-grow p-2 border-0 text-dark rounded-[8px] focus:outline-0"
                     {...register("question", { required: true })}
                     placeholder="Type your message"
                 />
@@ -77,7 +77,7 @@ function InputArea() {
                 <button
                     // disabled={isLoading ? true : false}
                     type="submit"
-                    className="p-2 mr-2 text-white bg-blue-500 rounded disabled:bg-gray-200"
+                    className="p-2 mr-2 text-white bg-primary rounded disabled:bg-gray-200"
                 >
                     <svg
                         width="16"

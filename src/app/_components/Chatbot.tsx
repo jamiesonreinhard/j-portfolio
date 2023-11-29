@@ -5,7 +5,7 @@ import InputArea from "./InputArea";
 
 function Chatbot() {
   return (
-    <div className="flex flex-col justify-between p-6 bg-white rounded-lg shadow-lg max-h-[70vh] min-h-[50vh]">
+    <div className="flex flex-col justify-between p-6 bg-white rounded-lg shadow-lg h-[500px]">
       <ChatHeader />
       <MessageWindows />
       <InputArea />

@@ -6,7 +6,6 @@ const ChatbotContext = createContext<any>(undefined);
 
 export function ChatbotProvider({ children }: { children: ReactNode }) {
   const [threadId, setThreadId] = useLocalStorage("threadId", undefined);
-
   const [runId, setRunId] = useLocalStorage<string | undefined>(
     "runId",
     undefined

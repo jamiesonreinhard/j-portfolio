@@ -14,8 +14,8 @@ const Message = React.forwardRef(
       <div
         className={`rounded-lg py-3 px-4 mb-3 ${
           message.role === "assistant"
-            ? "bg-gray-200 text-black"
-            : "bg-blue-500 text-white"
+            ? "bg-gray-200 text-dark"
+            : "bg-primary text-white"
         }`}
       >
         <p>{formatMessage(message.content[0]?.text?.value)}</p>
