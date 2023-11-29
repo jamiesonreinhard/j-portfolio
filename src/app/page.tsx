@@ -9,10 +9,6 @@ import Link from "next/link";
 
 export default function Home() {
 
-  const downloadResume = () => {
-
-  }
-
   return (
     <main id="chatbot-openai" className="w-screen overflow-hidden flex relative">
       <div className="w-[90%] max-w-6xl mx-auto py-[140px] flex flex-col lg:flex-row gap-10 lg:gap-20 items-center">
