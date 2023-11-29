@@ -1,12 +1,12 @@
 "use client"
 import Link from 'next/link'
 import MobileNav from './MobileNavbar';
-import BotImage from "@/assets/jr-icon.png";
+import NavLogo from "@/assets/jamieson-logo-nav-lg.png";
 import Image from 'next/image';
 
 const links = [
   { href: '/', label: 'Home' },
-  { href: '/projects', label: 'Projects' },
+  { href: '/resume', label: 'Resume' },
 ];
 
 const Navbar = () => {
@@ -28,7 +28,7 @@ const Navbar = () => {
           ))}
         </div>
         <Link href="/">
-          <Image className="w-10 h-10" src={BotImage} alt="Chatbot"></Image>
+          <Image className="w-[160px]" src={NavLogo} alt="nav logo"></Image>
         </Link>
       </div>
     </nav>

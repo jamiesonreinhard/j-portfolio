@@ -77,7 +77,7 @@ function InputArea() {
                 <button
                     // disabled={isLoading ? true : false}
                     type="submit"
-                    className="p-2 text-white bg-blue-500 rounded disabled:bg-gray-200"
+                    className="p-2 mr-2 text-white bg-blue-500 rounded disabled:bg-gray-200"
                 >
                     <svg
                         width="16"
