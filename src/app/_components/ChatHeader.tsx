@@ -6,9 +6,12 @@ import TrashIcon from "@/assets/trash.svg";
 
 const ChatHeader = () => {
   const clearChat = () => {
-    localStorage.removeItem("runId");
-    localStorage.removeItem("threadId");
-    window.location.reload();
+    if (typeof window !== 'undefined') {
+      // Ensure window object is available
+      localStorage.removeItem("runId");
+      localStorage.removeItem("threadId");
+      window.location.reload();
+    }
   }
 
   return (
